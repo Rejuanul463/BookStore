@@ -1,0 +1,7 @@
+composer create-project laravel/laravel laravel-bookstore
+php artisan make:controller BookController
+php artisan make:model Book
+database:
+php artisan make:migration create_books_table
+php artisan migrate
+php artisan db:seed
